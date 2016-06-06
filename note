@@ -1,0 +1,33 @@
+## NERDTREE
+
+ctrl + n    - toggle NERDTREE
+o           - open in new buffer
+t           - open in new tab
+i           - open in horizontal split
+s           - open in vertical split
+p           - go to parent directory
+r           - refresh
+
+## SPLIT WINDOW
+
+:sp         - horizontal split
+:vs         - vertical split
+
+## MOVING FROM WINDOW
+
+shift + hjkl
+
+## FORWARD & BACKWARD CURSOR
+
+ctrl + o    - backward
+ctrl + i    - forward
+
+## bufexplorer
+\be         - new window of buffer list
+\bs         - new horizontal split of buffer list
+\bv         - new vertical split open
+
+## search
+
+:set noignorecase - case sensitive search
+:set ignorecase   - case insensitive search (default)
