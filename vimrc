@@ -1,4 +1,7 @@
 "------------------------------------------------
+"try to add some git change
+
+"------------------------------------------------
 "autocomplete bracket
 :inoremap ( ()<ESC>i
 :inoremap ) <c-r>=ClosePair(')')<CR>
