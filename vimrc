@@ -124,7 +124,7 @@ set number numberwidth=4
 
 "------------------------------------------------
 "look and feel
-:colo default 
+:colo elflord 
 
 "------------------------------------------------
 "functions
