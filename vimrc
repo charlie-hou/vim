@@ -43,7 +43,7 @@ map <C-p>   <ESC>:CtrlP<CR>
 map <C-r> <ESC>:CtrlPBufTag<CR>
 
 "ack.vim
-map <C-f> <ESC>:Ack <cword><CR>
+map <C-f> <ESC>:Ack <cword> 
 
 "quickfix window
 map <C-n> <ESC>:cn<CR>
@@ -58,6 +58,9 @@ nnoremap <C-t> :TagbarToggle<CR>
 
 "switch buffer without saving
 set hidden
+
+"for bufdo without asking more
+set nomore
 
 "no swap file
 set noswapfile

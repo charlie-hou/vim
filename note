@@ -27,7 +27,33 @@ ctrl + i    - forward
 \bs         - new horizontal split of buffer list
 \bv         - new vertical split open
 
-## search
+## SEARCH & REPLACE
 
 :set noignorecase - case sensitive search
 :set ignorecase   - case insensitive search (default)
+
+
+:%s/foo/bar/g           - replace in all lines
+:s/foo/bar/g            - replace in current line only
+:%s/foo/bar/gc          - replace need confirmation each time
+:%s/\<foo\>/bar/g       - replace exact foo (search in whole word mode)
+
+:5,12s/foo/bar/g        - replace foo with bar in line 5 to line 12
+
+:s#http://www.example.com/index.html#http://example.com/#g
+
+    # zs & ze to specify pattern
+    :s/Copyright \zs2007\ze All Rights Reserved/2008/
+
+    # using ack to find and replace 
+    # need to set nomore
+    vim -f $(ack -l 'search_content')
+    :bufdo %s/search_content/replacement/g | update
+
+
+## QUICKFIX WINDOW
+
+:ccl        - close QUICKFIX WINDOW
+:cn         - next (CTRL - N)
+:cp         - next (CTRL - M)
+o           - open in buffer
