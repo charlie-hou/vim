@@ -1,2 +1,4 @@
 --ignore-file=is:tags
 --ignore-file=is:TAGS
+
+--type-set=cfg=.cfg
