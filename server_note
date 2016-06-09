@@ -1,0 +1,27 @@
+1. check out server code
+
+2. create database table
+    tools/create_table/create_all_table.sh 1
+
+3. install config
+    tools/GeneralConfig/install_conf.sh 1
+
+4. modify dir config
+    dir/config/dir.conf
+
+    [WorldInfo]
+    WorldID = 1
+    WorldName = 68
+    WorldIP = **LocalIp**
+
+5. build res
+    tools/build_res.sh
+
+    cat tools/build_res.sh
+    export SCRIPT_CHANNEL_RES=cn
+    ./build_res.sh all
+
+6. tbus config
+    tools/conf/create_single_tbus_conf.sh
+
+7. cp all configs from ~/game_server_config/ into a new repo
