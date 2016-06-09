@@ -56,6 +56,9 @@ nnoremap <C-t> :TagbarToggle<CR>
 "------------------------------------------------
 "vim features
 
+"auto read
+set autoread
+
 "switch buffer without saving
 set hidden
 
