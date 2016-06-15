@@ -101,6 +101,8 @@ filetype plugin indent on
 "------------------------------------------------
 "editor feature
 
+set cursorline
+
 "auto indent space = 4
 set sw=4
 
