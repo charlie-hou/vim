@@ -131,6 +131,9 @@ set number numberwidth=4
 "look and feel
 :colo elflord 
 
+highlight Pmenu ctermbg=Black ctermfg=White
+highlight PmenuSel ctermbg=White ctermfg=Black
+
 "------------------------------------------------
 " WatchForChanges
 
