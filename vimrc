@@ -24,6 +24,8 @@ endfunction
 "key mapping
 map <C-k>   <ESC>:NERDTreeToggle<CR>
 
+map <C-h>   <ESC>:set nonu<CR>
+
 "forward & backward
 "map <C-->   <C-o>
 "map <C-+>   <C-i>
