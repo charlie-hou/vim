@@ -42,14 +42,18 @@ ctrl + i    - forward
 
 :s#http://www.example.com/index.html#http://example.com/#g
 
-    # zs & ze to specify pattern
+    zs & ze to specify pattern
     :s/Copyright \zs2007\ze All Rights Reserved/2008/
 
-    # using ack to find and replace 
-    # need to set nomore
+    using ack to find and replace 
+    need to set nomore
+
     vim -f $(ack -l 'search_content')
     :bufdo %s/search_content/replacement/g | update
 
+:s/\(^[1-9]\)/##\1/g
+# \(PATTERN\) create subpattern
+# \1 \2 \3    use subpattern in replacement
 
 ## QUICKFIX WINDOW
 
@@ -57,3 +61,13 @@ ctrl + i    - forward
 :cn         - next (CTRL - N)
 :cp         - next (CTRL - M)
 o           - open in buffer
+
+## DIFF MODE
+
+do          - pull from other window
+dp          - put to other window
+]c          - next different
+[c          - prev different
+zo          - folding open
+zc          - folding close
+#:set diffopt context:3
