@@ -9,8 +9,6 @@
 :inoremap } <c-r>=ClosePair('}')<CR>
 :inoremap [ []<ESC>i
 :inoremap ] <c-r>=ClosePair(']')<CR>
-:inoremap " ""<ESC>i
-:inoremap ' ''<ESC>i
 
 function! ClosePair(char)
     if getline('.')[col('.') - 1] == a:char
@@ -129,9 +127,14 @@ set nowrap
 "line number
 set number numberwidth=4
 
+au BufNewFile, BufFilePre, BufRead *.md set filetype=markdown
+
 "------------------------------------------------
 "look and feel
 :colo elflord 
+
+highlight Pmenu ctermbg=Black ctermfg=White
+highlight PmenuSel ctermbg=White ctermfg=Black
 
 "------------------------------------------------
 " WatchForChanges
