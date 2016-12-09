@@ -40,7 +40,7 @@ map <C-\>   <ESC>:A<CR>
 "CtrlP.vim
 map <C-p>   <ESC>:CtrlP<CR>
 "show current buffer tags
-map <C-r> <ESC>:CtrlPBufTag<CR>
+map <C-r>   <ESC>:CtrlPBufTag<CR>
 
 "ack.vim
 map <C-f> <ESC>:Ack <cword> 
