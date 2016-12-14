@@ -20,19 +20,17 @@ endfunction
 
 "------------------------------------------------
 "key mapping
-map <C-k>   <ESC>:NERDTreeToggle<CR>
-
-map <C-h>   <ESC>:set nonu<CR>
+map <S-k>   <ESC>:NERDTreeToggle<CR>
 
 "forward & backward
 "map <C-->   <C-o>
 "map <C-+>   <C-i>
 
 "moving inside window
-map <S-j>   <C-W>j
-map <S-k>   <C-W>k
-map <S-h>   <C-W>h
-map <S-l>   <C-W>l
+map <C-j>   <C-W>j
+map <C-k>   <C-W>k
+map <C-h>   <C-W>h
+map <C-l>   <C-W>l
 
 "a.vim
 map <C-\>   <ESC>:A<CR>
